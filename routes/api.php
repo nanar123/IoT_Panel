@@ -88,3 +88,5 @@ Route::prefix('v1/devices')->name('devices.')->group(function () {
 //2. lokasi file controller --> []
 Route::get('v1/temperature', [TemperatureController::class, 'getTemperature']);
 Route::post('v1/temperature', [TemperatureController::class, 'insertTemperature']);
+Route::put('v1/temperature', [TemperatureController::class, 'updateTemperature']);
+Route::delete('v1/temperature', [TemperatureController::class, 'deleteTemperature']);
